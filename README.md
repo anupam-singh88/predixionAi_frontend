@@ -42,3 +42,5 @@ This project is a task management frontend developed using ReactJS. It includes 
    npm start
    ```
 
+Backend Production URL : https://predixionai-notes-backend.onrender.com/
+FrontEnd Production URL : https://predixion-ai-frontend-one.vercel.app/
