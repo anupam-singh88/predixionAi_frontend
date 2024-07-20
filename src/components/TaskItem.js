@@ -8,10 +8,6 @@ const TaskItem = ({ task }) => {
         removeTask(task.id);
     };
 
-    const editTask = () => {
-
-    }
-
     const handleUpdateStatus = () => {
         const newStatus = task.status === 'todo' ? 'in_progress' : 'done';
         modifyTask(task.id, { ...task, status: newStatus });
@@ -25,7 +21,7 @@ const TaskItem = ({ task }) => {
                 <span className={`badge ${task.status}`}>{task.status}</span>
             </div>
             <div className="space-x-2">
-                <button onClick={editTask} className="p-2 bg-green-500 text-white rounded">Edit Task</button>
+                {/* <button onClick={editTask} className="p-2 bg-green-500 text-white rounded">Edit Task</button> */}
                 <button onClick={handleUpdateStatus} className="p-2 bg-green-500 text-white rounded">Update Status</button>
                 <button onClick={handleDelete} className="p-2 bg-red-500 text-white rounded">Delete</button>
             </div>
